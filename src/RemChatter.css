@@ -1,0 +1,120 @@
+﻿body{
+    font-family:'Microsoft YaHei','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:22px;
+}
+
+#Rem{
+    position:absolute;
+    z-index:-1;
+    top:0px;
+    left:0px;
+    background-image: url(./back_class_normal.png);
+    background-size:600px;
+    overflow:hidden;
+    margin-bottom:-40px;
+}
+
+#msgBOX{
+    position: absolute;
+    display: block;
+    width: 227px;
+    height:58px;
+    overflow: hidden;
+    top: 56px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    color: #ffffff;
+    animation: tremble 5s ease-in-out infinite;
+    -moz-animation: tremble 5s ease-in-out infinite;	
+    -webkit-animation: tremble 5s ease-in-out infinite;	
+    -o-animation: tremble 5s ease-in-out infinite;
+}
+
+#TRUEmsgBOX{
+    display: block;
+    width: 217px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+#msgDeco{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 15px;
+    top: 104px;
+    left: 228px;
+    background-color: rgba(0, 0, 0, 0.57);
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#chat{
+    position:absolute;
+    display:block;
+    width:420px;
+    height:38px;
+    top:412px;
+    left:77px;
+    background-color:rgba(0, 0, 0, 0.57);
+    border-radius:10px;
+    border:0;
+    outline:0;
+    color:#ffffff;
+    padding-left:10px;
+}
+
+#send{
+    display:block;
+    width:20px;
+    height:25px;
+    background-image:url('./point point.png');
+    background-color:rgba(0,0,0,0);
+    position:absolute;
+    left:485px;
+    top:419px;
+    border: 0;
+    outline: none;
+    transform:rotate(-90deg);
+    cursor:pointer;
+}
+
+@keyframes tremble
+{
+    0% {top:56px;left:10px;}
+    25% {top:53px;left:7px;}
+    50% {top:56px;left:10px;}
+    75% {top:59px;left:13px;}
+    100% {top:56px;left:10px;}
+}
+
+@-moz-keyframes tremble
+{
+    0% {top:56px;left:10px;}
+    25% {top:53px;left:7px;}
+    50% {top:56px;left:10px;}
+    75% {top:59px;left:13px;}
+    100% {top:56px;left:10px;}
+}
+
+@-webkit-keyframes tremble
+{
+    0% {top:56px;left:10px;}
+    25% {top:53px;left:7px;}
+    50% {top:56px;left:10px;}
+    75% {top:59px;left:13px;}
+    100% {top:56px;left:10px;}
+}
+
+@-o-keyframes tremble
+{
+    0% {top:56px;left:10px;}
+    25% {top:53px;left:7px;}
+    50% {top:56px;left:10px;}
+    75% {top:59px;left:13px;}
+    100% {top:56px;left:10px;}
+}

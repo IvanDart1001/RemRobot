@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Re0:Rem</title>
+    <link rel="stylesheet" type="text/css" href="src/RemChatter.css"/>
+    <!-- Live2D Library -->
+    <script type="text/javascript" src="./js/live2d.min.js"></script>
+    <!-- Live2D Framework -->
+    <script type="text/javascript" src="./js/Live2DFramework.js"></script>
+    <script src="./src/utils/MatrixStack.js"></script>
+    <script src="./src/utils/ModelSettingJson.js"></script>
+    <script src="./src/PlatformManager.js"></script>
+    <script src="./src/LAppDefine.js"></script>
+    <script src="./src/LAppModel.js"></script>
+    <script src="./src/LAppLive2DManager.js"></script>
+    <script src="./src/SampleApp1.js"></script>
+    <script src="./js/jquery-2.2.0.min.js"></script>
+    <script src="./js/RemChatting.js"></script>
+</head>
+<body style="background-color:rgba(0, 0, 0, 0.00)">
+    <!--[if IE]>
+        <script>
+            alert("我们的前端攻城狮宝宝被您的浏览器内核给吓到了！！（攻城狮：我好方！\n建议试试chrome或者safari浏览器吧！")
+        </script>
+    <![endif]-->
+    <!--↓↓↓↓↓↓↓主体部分↓↓↓↓↓↓↓-->
+    <audio id="Talk" src="undefined" style="display:none"></audio>
+    <canvas id="Rem" width="600" height="450" ></canvas>
+    <div id="msgBOX">
+        <div id="TRUEmsgBOX">
+            主人今天也和蕾姆聊天吗？~
+        </div>
+    </div>
+    <div id="msgDeco"></div>
+    <input id="chat" type="text" placeholder="在这个框框里输入小主人想和蕾姆说的话，按回车或者戳箭头就行~" onfocus="this.select()" onkeydown="if(event.keyCode==13)replyX()"  />
+    <button id="send" type="button" onclick="replyX()"/>
+    <!--↑↑↑↑↑↑↑主体部分↑↑↑↑↑↑↑-->
+    <script>
+        sampleApp1();
+    </script>
+</body>
+</html>
